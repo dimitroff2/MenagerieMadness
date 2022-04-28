@@ -1,0 +1,57 @@
+USE [MenagerieMadness]
+GO
+
+set identity_insert [users] on
+insert into [users] ([id], [Email], [Password], [Name]) VALUES (1, 'B@me.com', 'password', 'Brandi')
+set identity_insert [users] off
+
+
+set identity_insert [question] on
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (1, 1, 'What liquid will butterflies NOT drink', 'oil', 'blood', 'tears')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (2, 1, 'Celephod have great camflogue despite', 'being colorblind', 'being underwater', 'having blue blood')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (3, 1, 'Elephants are the only animals that CANT', 'jump', 'die of a broken heart', 'distinguish languages')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (4, 1, 'A crocodile CANT', 'stick out their tongue', 'sleep with one eye open', 'apply 5000lbs of bite force per square inch')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (5, 1, 'What animal has the highest blood pressure?', 'Giraffee', 'Elephant', 'Squirrel')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (6, 1, 'What is some of the fastest growing tissue in the animal kingdom?', 'Deer Antlers', 'Hair', 'Sloth Claws')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (7, 1, 'What color is a polar bears skin?', 'Black', 'White', 'Brown')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (8, 1, 'Ostriches can live to be', '75yrs old', '20yrs old', '5yrs old')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (9, 1, 'What mammal besides humans have the best long term memory?', 'Bottlenose Dolphin', 'African Elephant', 'Siberian Tiger')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (10, 1, 'What animal cant see you if you don’t move?', 'Bee', 'Tyrannosaurus Rex', 'Chameleon')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (11, 1, 'Which is not a real animal species?', 'Black Panther', 'Clouded Leopard', 'African Golden Cat')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (12, 1, 'Armadillos can carry', 'Leprosy', 'Covid 19', 'Measels')
+
+insert into [question] ([id], [userId], [question], [answer], [wrong1], [wrong2])
+values (13, 1, 'What penguin can be found north of the equator?', 'Galapagos penguin', 'Emperor Penguin', 'Blue Penguin')
+
+set identity_insert [question] off
+
+
+set identity_insert [game] on
+insert into [game] ([id], [userId], [score], [dateplayed])
+values (1, 1, 7, '4/27/2022')
+insert into [game] ([id], [userId], [score], [dateplayed])
+values (1, 2, 9, '4/28/2022')
+set identity_insert [game] off
