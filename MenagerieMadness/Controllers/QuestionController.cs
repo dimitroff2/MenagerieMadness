@@ -19,5 +19,16 @@ namespace MenagerieMadness.Controllers
         {
             return Ok(_questionRepo.GetAllQuestions());
         }
+        //get by Id
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var question = _questionRepo.GetById(id);
+            if (question == null)
+            {
+                return NotFound();
+            }
+            return Ok(question);
+        }
     }
 }

@@ -6,8 +6,9 @@ namespace MenagerieMadness.Repositories
 {
     public interface IQuestionRepository
     {
-        SqlConnection Connection { get; }
-
+        
         List<Question> GetAllQuestions();
+
+        Question GetById(int id);
     }
 }
