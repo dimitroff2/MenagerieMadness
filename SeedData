@@ -2,7 +2,7 @@ USE [MenagerieMadness]
 GO
 
 set identity_insert [users] on
-insert into [users] ([id], [email], [password], [name]) VALUES (1, 'B@me.com', 'password', 'Brandi')
+insert into [users] ([id], [Email], [Password], [Name]) VALUES (1, 'B@me.com', 'password', 'Brandi')
 set identity_insert [users] off
 
 
