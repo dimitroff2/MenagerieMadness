@@ -15,6 +15,8 @@ namespace MenagerieMadness.Models
         public string wrong1 { get; set; }
         public string wrong2 { get; set; }
 
+        
+
 
     }
 }
